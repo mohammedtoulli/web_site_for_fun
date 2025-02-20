@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inscription.css">
+    <link rel="icon" href="image/checklist.png">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+    <fieldset>
+
+            <h2>Formaire d'inscription avancé</h2>
+        
+            <form action="/submit" method="post">
+                <!-- Champ texte -->
+                <label for="username">Nom d'utilisateur :</label>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+        
+                <!-- Champ mot de passe -->
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" minlength="6" required>
+                <br><br>
+        
+                <!-- Champ email -->
+                <label for="email">Adresse e-mail :</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+        
+                <!-- Case à cocher -->
+                <label for="newsletter">S'inscrire à la newsletter :</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <br><br>
+        
+                <!-- Boutons radio -->
+                <label>Genre :</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Homme</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Femme</label>
+                <br><br>
+        
+                <!-- Sélection de date -->
+                <label for="birthdate">Date de naissance :</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                <br><br>
+        
+                <!-- Sélection d'heure -->
+                <label for="time">Heure de rendez-vous :</label>
+                <input type="time" id="time" name="time">
+                <br><br>
+        
+                <!-- Champ URL -->
+                <label for="website">Site web personnel :</label>
+                <input type="url" id="website" name="website">
+                <br><br>
+        
+                <!-- Champ numéro de téléphone -->
+                <label for="phone">Numéro de téléphone :</label>
+                <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required>
+                <br><br>
+        
+                <!-- Zone de texte -->
+                <label for="bio">Biographie :</label><br>
+                <textarea id="bio" name="bio" rows="5" cols="33" placeholder="Parlez-nous de vous..."></textarea>
+                <br><br>
+        
+                <!-- Liste déroulante -->
+                <label for="country">Pays :</label>
+                <select id="country" name="country">
+                    <option value="france">France</option>
+                    <option value="belgium">Belgique</option>
+                    <option value="canada">Canada</option>
+                </select>
+                <br><br>
+        
+                <!-- Sélection d'une gamme (slider) -->
+                <label for="satisfaction">Niveau de satisfaction :</label>
+                <input type="range" id="satisfaction" name="satisfaction" min="0" max="10">
+                <br><br>
+        
+                <!-- Sélection de couleur -->
+                <label for="favcolor">Choisissez une couleur :</label>
+                <input type="color" id="favcolor" name="favcolor">
+                <br><br>
+        
+                <!-- Champ fichier -->
+                <label for="resume">Télécharger votre CV :(pdf)</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                <br><br>
+        
+                <!-- Champ nombre -->
+                <label for="quantity">Quantité :</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10">
+                <br><br>
+        
+                <!-- Boutons d'envoi et de réinitialisation -->
+                <input type="submit" value="S'inscrire">
+                <input type="reset" value="Réinitialiser">
+            </form>
+        
+</fieldset>
+</body>
+</html>
